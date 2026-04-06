@@ -2,7 +2,11 @@
 
 A vibrant, endless arcade game inspired by the classic "Crossy Road," specifically engineered for a premium experience on **Android TV** and **Google TV**. Built with **Flutter**, it features smooth animations, procedurally generated worlds, and intuitive D-pad controls.
 
-https://github.com/Ratul121/Crossy-Sikto/raw/main/assets/video/Crossy%20Sikto.mp4
+### 🎥 Gameplay Watch
+
+[![Watch the gameplay demo](https://img.youtube.com/vi/2qonsfFVH-4/0.jpg)](https://youtube.com/shorts/2qonsfFVH-4)
+
+*(Click to watch)*
 
 ## 🌟 Features
 
