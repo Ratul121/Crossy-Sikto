@@ -1,75 +1,168 @@
-# Crossy Road TV 🐔
+# 🐔 Crossy Sikto
 
-A vibrant, endless arcade game inspired by the classic "Crossy Road," specifically engineered for a premium experience on **Android TV** and **Google TV**. Built with **Flutter**, it features smooth animations, procedurally generated worlds, and intuitive D-pad controls.
+## 📖 The Story
 
-### 🎥 Gameplay Watch
+This started as a random curiosity.
+
+I was watching TV with my cousin and suddenly wondered:
+**“Can we actually build TV apps using Flutter?”**
+
+So I tried.
+
+With some help from AI, I built a simple Flutter app template for TV. The biggest difference from mobile?
+👉 No touchscreen — everything is controlled using a **D-pad**.
+
+I enabled developer mode on the TV, connected it using:
+
+```bash
+adb connect <ip-address>
+```
+
+…and boom — the app was running on the TV 🎉
+
+That experiment turned into **Crossy Sikto**.
+
+---
+
+## 🎮 About the Game
+
+**Crossy Sikto** is a vibrant, endless arcade game inspired by *Crossy Road*, built specifically for **Android TV** and **Google TV** using **Flutter**.
+
+It’s designed from the ground up for the big screen, with smooth gameplay, procedural environments, and intuitive remote controls.
+
+---
+
+## 🎥 Gameplay
 
 [![Watch the gameplay demo](https://img.youtube.com/vi/2qonsfFVH-4/0.jpg)](https://youtube.com/shorts/2qonsfFVH-4)
 
-*(Click to watch)*
+> Click to watch the demo
+
+---
 
 ## 🌟 Features
 
-- **📺 TV Optimized**: Full D-pad support and landscape-first UI designed for the big screen.
-- **🛣️ Endless Adventure**: Procedural world generation ensures no two runs are the same.
-- **🌊 Dynamic Hazards**: Navigate through busy roads, treacherous rivers with floating logs, and grassy safe zones.
-- **🎵 Immersive Audio**: Retro sound effects and background music that adapt to your gameplay.
-- **📈 Score Tracking**: Real-time HUD showing your current score and all-time high score.
-- **✨ Polished Aesthetics**: Smooth camera panning, character "squish" animations, and particle effects.
+* 📺 **TV-First Experience**
+  Designed specifically for TV screens with full D-pad navigation.
+
+* 🛣️ **Endless Gameplay**
+  Procedurally generated worlds — every run is unique.
+
+* 🌊 **Dynamic Obstacles**
+  Dodge traffic, cross rivers on moving logs, and survive unpredictable terrain.
+
+* 🎵 **Immersive Sound**
+  Retro-style sound effects and adaptive background music.
+
+* 📈 **Score System**
+  Live score tracking + persistent high score.
+
+* ✨ **Polished Feel**
+  Smooth camera movement, squash/stretch animations, and particle effects.
+
+---
 
 ## 🚀 Getting Started
 
 ### Prerequisites
 
-- **[Flutter SDK](https://docs.flutter.dev/get-started/install)** (Stable channel recommended)
-- **Android SDK** with Command Line Tools
-- An **Android TV** device or **Android TV Emulator** with ADB enabled.
+* Flutter SDK (stable recommended)
+  [https://docs.flutter.dev/get-started/install](https://docs.flutter.dev/get-started/install)
 
-### Installation & Run
+* Android SDK + Command Line Tools
 
-1. **Clone the repository**:
-   ```bash
-   git clone <repository-url>
-   cd tv
-   ```
+* Android TV device or emulator (ADB enabled)
 
-2. **Install dependencies**:
-   ```bash
-   flutter pub get
-   ```
+---
 
-3. **Launch the app**:
-   - Ensure your TV/Emulator is connected via `adb connect <ip-address>`.
-   - Run the application:
-     ```bash
-     flutter run
-     ```
+### Installation
+
+```bash
+git clone <repository-url>
+cd tv
+flutter pub get
+```
+
+---
+
+### Run on TV
+
+1. Connect your TV:
+
+```bash
+adb connect <ip-address>
+```
+
+2. Run the app:
+
+```bash
+flutter run
+```
+
+---
 
 ## 🎮 Controls
 
-The game is designed to be played with a standard TV Remote or Gamepad:
+Designed for **TV remotes & gamepads**:
 
-| Action | Remote / Keyboard |
-| :--- | :--- |
-| **Move Up** | D-Pad Up / Arrow Up |
-| **Move Down** | D-Pad Down / Arrow Down |
-| **Move Left** | D-Pad Left / Arrow Left |
-| **Move Right** | D-Pad Right / Arrow Right |
-| **Select / Jump** | Center / Enter / Space |
-| **Back / Menu** | Back Button / Escape |
+| Action        | Input              |
+| ------------- | ------------------ |
+| Move Up       | D-Pad Up / ↑       |
+| Move Down     | D-Pad Down / ↓     |
+| Move Left     | D-Pad Left / ←     |
+| Move Right    | D-Pad Right / →    |
+| Jump / Select | OK / Enter / Space |
+| Back / Menu   | Back / ESC         |
+
+---
 
 ## 📁 Project Structure
 
-- **`lib/game/`**: The core game engine, including player logic (`player.dart`), world generation (`lane.dart`), and main loop (`crossy_game.dart`).
-- **`lib/ui/`**: All UI components including the HUD, Menu, Settings, and Game Over screens.
-- **`assets/`**:
-  - `img/`: Pixel art sprites and game icons.
-  - `audio/`: All sound effects (SFX) and background music (BGM).
+```
+lib/
+ ├── game/        # Core game logic
+ │   ├── player.dart
+ │   ├── lane.dart
+ │   └── crossy_game.dart
+ │
+ ├── ui/          # UI screens (HUD, Menu, Game Over)
+ │
+assets/
+ ├── img/         # Sprites & icons
+ └── audio/       # Sound effects & music
+```
+
+---
 
 ## 🛠️ Built With
 
-- **Flutter**: For the cross-platform UI and rendering.
-- **Audioplayers**: For high-performance audio management.
+* **Flutter** — UI & rendering engine
+* **audioplayers** — audio system
 
 ---
-*Developed as a high-quality TV gaming demonstration.*
+
+## 💡 Why This Project?
+
+This isn’t just a game — it’s a **proof of concept**:
+
+👉 Flutter can be used to build smooth, production-quality **TV apps & games**
+👉 D-pad based UX is a completely different design challenge
+👉 Rapid prototyping with AI + Flutter is insanely powerful
+
+---
+
+## ⭐ Future Ideas
+
+* Leaderboard system
+* More characters & skins
+* Difficulty scaling
+* Gamepad vibration support
+* Multiplayer mode 👀
+
+---
+
+## 🙌 Final Note
+
+Built as a fun experiment — but turned into something surprisingly polished.
+
+If you found this interesting, give it a ⭐ or try building your own TV app with Flutter 🚀
